@@ -18,16 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kuX-Ok-aYi">
-                                <rect key="frame" x="159" y="304.5" width="57" height="58.5"/>
+                                <rect key="frame" x="132" y="304" width="111" height="59.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZc-2a-gRo">
-                                        <rect key="frame" x="0.0" y="0.0" width="57" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noi Nhan Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZc-2a-gRo">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="21.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
+                                        <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="shadowColor" red="1" green="0.2023241063" blue="0.25486140709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNn-wy-y8K">
-                                        <rect key="frame" x="0.0" y="28.5" width="57" height="30"/>
+                                        <rect key="frame" x="0.0" y="29.5" width="111" height="30"/>
                                         <state key="normal" title="Dang Ky"/>
                                         <connections>
                                             <segue destination="ype-1k-i56" kind="show" id="Qen-xa-6Rk"/>
@@ -49,6 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="252" y="26"/>
         </scene>
         <!--Phat View Controller-->
         <scene sceneID="XUe-g4-hxr">

@@ -14,6 +14,8 @@ extension Notification.Name {
 
 class DangKyViewController: UIViewController {
     
+    // Kien cung
+    
     @IBOutlet weak var nameLabel: UILabel!
 
     override func viewDidLoad() {
