@@ -22,6 +22,8 @@ class DangKyViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         NotificationCenter.default.addObserver(self, selector: #selector(dangKy(notification:)), name: .dataText, object: nil)
+        let myView = UIView()
+        
     }
 
     deinit {
@@ -32,6 +34,8 @@ class DangKyViewController: UIViewController {
     @objc func dangKy(notification: NSNotification) {
         nameLabel.text = notification.object as? String
     }
+    
+    
     
 }
 
