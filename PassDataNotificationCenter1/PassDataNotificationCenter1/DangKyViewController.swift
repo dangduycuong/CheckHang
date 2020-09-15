@@ -23,6 +23,20 @@ class DangKyViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         NotificationCenter.default.addObserver(self, selector: #selector(dangKy(notification:)), name: .dataText, object: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "push":
+            if let vc = segue.destination as? PhatViewController {
+                title = ""
+                vc.title = "Phát thông báo"
+                navigationController?.pushViewController(vc, animated: false)
+            }
+            
+        default:
+            break
+        }
+    }
 
     deinit {
         NotificationCenter.default.removeObserver(self)

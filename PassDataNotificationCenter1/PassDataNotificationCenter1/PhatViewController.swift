@@ -21,7 +21,8 @@ class PhatViewController: UIViewController {
     
     @IBAction func phatButton(_ sender: UIButton) {
         NotificationCenter.default.post(name: .dataText, object: phatTextField.text)
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
 
     /*

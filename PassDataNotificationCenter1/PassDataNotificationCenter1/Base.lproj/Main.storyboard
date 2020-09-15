@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xkp-gi-eJL">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="29.5" width="111" height="30"/>
                                         <state key="normal" title="Dang Ky"/>
                                         <connections>
-                                            <segue destination="ype-1k-i56" kind="show" id="Qen-xa-6Rk"/>
+                                            <segue destination="ype-1k-i56" kind="push" identifier="push1" id="l2D-QI-GzY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -44,13 +43,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oBZ-we-xlN"/>
                     <connections>
                         <outlet property="nameLabel" destination="IZc-2a-gRo" id="hhW-gZ-IwM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="252" y="26"/>
+            <point key="canvasLocation" x="1191.2" y="25.637181409295355"/>
         </scene>
         <!--Phat View Controller-->
         <scene sceneID="XUe-g4-hxr">
@@ -60,45 +60,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="U4I-NK-jde">
-                                <rect key="frame" x="0.0" y="299.5" width="375" height="68"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="U4I-NK-jde">
+                                <rect key="frame" x="8" y="297.5" width="359" height="72"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3j-XL-Lyw">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgC-3r-DrN">
-                                        <rect key="frame" x="171.5" y="38" width="32" height="30"/>
-                                        <state key="normal" title="Phat"/>
+                                        <rect key="frame" x="0.0" y="42" width="359" height="30"/>
+                                        <state key="normal" title="Post"/>
                                         <connections>
                                             <action selector="phatButton:" destination="ype-1k-i56" eventType="touchUpInside" id="IAB-4W-kEh"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="r3j-XL-Lyw" secondAttribute="trailing" id="6PC-5s-PQp"/>
-                                    <constraint firstItem="r3j-XL-Lyw" firstAttribute="leading" secondItem="U4I-NK-jde" secondAttribute="leading" id="Id9-qt-p8W"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.2023241063" blue="0.25486140709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="U4I-NK-jde" firstAttribute="centerY" secondItem="wsh-DL-9fv" secondAttribute="centerY" id="8I7-jv-HxD"/>
-                            <constraint firstItem="U4I-NK-jde" firstAttribute="leading" secondItem="0oV-Ot-4YO" secondAttribute="leading" id="D7G-FR-UuD"/>
                             <constraint firstItem="U4I-NK-jde" firstAttribute="centerX" secondItem="wsh-DL-9fv" secondAttribute="centerX" id="UBU-dW-EuN"/>
-                            <constraint firstItem="0oV-Ot-4YO" firstAttribute="trailing" secondItem="U4I-NK-jde" secondAttribute="trailing" id="qQd-Kr-aO4"/>
+                            <constraint firstItem="0oV-Ot-4YO" firstAttribute="trailing" secondItem="U4I-NK-jde" secondAttribute="trailing" constant="8" id="qQd-Kr-aO4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0oV-Ot-4YO"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iZ2-mD-vdv"/>
                     <connections>
                         <outlet property="phatTextField" destination="r3j-XL-Lyw" id="Dub-4Y-b5v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rQ-ns-Tvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="26"/>
+            <point key="canvasLocation" x="1967.2" y="25.637181409295355"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yle-A4-GPe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xkp-gi-eJL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Km8-Zk-yMo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VFe-2a-Ffw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C53-gc-Gad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="25.637181409295355"/>
         </scene>
     </scenes>
 </document>
